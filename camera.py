@@ -124,15 +124,15 @@ clock = pygame.time.Clock()
 font = pygame.font.Font('fonts/cargo.ttf',40)
 score = pygame.font.Font('fonts/cargo.ttf',30)
 
-background = pygame.image.load("images/roadway.jpg")
+background = pygame.image.load("game_images/roadway.jpg")
 backrect = background.get_rect()
 #author: Crack.com(bart) -> http://opengameart.org/content/golgotha-textures-tunnelroadjpg
 
-carimg = pygame.image.load("images/car.png")
+carimg = pygame.image.load("game_images/car.png")
 #author: shekh_tuhin -> http://opengameart.org/content/red-car-top-down
 car_width = 49
 
-truckimg = pygame.transform.scale(pygame.image.load("images/pickup.png"),(70,145))
+truckimg = pygame.transform.scale(pygame.image.load("game_images/pickup.png"),(70,145))
 #author: TRBRY -> http://opengameart.org/content/car-pickup
 
 tires = pygame.mixer.Sound("sounds/tires_skid.ogg")
