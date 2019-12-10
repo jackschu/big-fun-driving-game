@@ -116,8 +116,6 @@ tags
 
 # End of https://www.gitignore.io/api/vim,macos,emacs,jupyternotebooks
 
-*.JPG
-
 egohands
 egohands_data.zip
 images
