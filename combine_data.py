@@ -8,7 +8,11 @@ def clean_path(dir_name, file_name):
         reader = csv.reader(csvfile)  # change contents to floats
         for row in reader:  # each row is a list
             img_name = row[0]
-            if img_name in rows:
+            if img_name == "filename":
+                rows[img_name] = [
+                    "width,height,class,xmin,ymin,xmax,ymax,xmin,ymin,xmax,ymax,xmin,ymin,xmax,ymax,xmin,ymin,xmax,ymax,xmin,ymin,xmax,ymax"
+                ]
+            elif img_name in rows:
                 rows[img_name] += row[-4:]
             else:
                 rows[img_name] = row[1:]
